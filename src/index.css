@@ -7,7 +7,18 @@
     @apply bg-[#0F1014] text-gray-100;
   }
 }
-
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'custom-dark': '#191B23',
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+}
 @layer components {
   .gradient-button {
     @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 bg-gradient-to-r from-[#4fffbc] via-[#cf68fb] to-[#ffe500] text-black hover:shadow-lg hover:shadow-purple-500/20 active:scale-95;
