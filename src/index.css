@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0F1014] text-gray-100;
+  }
+}
+
+@layer components {
+  .gradient-button {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 bg-gradient-to-r from-[#4fffbc] via-[#cf68fb] to-[#ffe500] text-black hover:shadow-lg hover:shadow-purple-500/20 active:scale-95;
+  }
+  
+  .card {
+    @apply bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl shadow-xl;
+  }
+  
+  .input {
+    @apply bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-gray-100;
+  }
+  
+  .select {
+    @apply bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-gray-100;
+  }
+}
